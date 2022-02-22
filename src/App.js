@@ -1,9 +1,11 @@
 import './App.css'
 import { Navbar } from './component/Navbar'
-function App () {
+import { Home } from './component/Home'
+function App() {
   return (
     <>
       <Navbar />
+      <Home />
     </>
   )
 }
