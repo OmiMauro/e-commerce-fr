@@ -10,10 +10,7 @@ const Carousel = () => {
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="#777" />
-          </svg>
-
+          <img className='bd-placeholder-img' width='100%' height='100%' src='https://picsum.photos/id/1000/5626/3635' />
           <div class="container">
             <div class="carousel-caption text-start">
               <h1>Example headline.</h1>
@@ -23,8 +20,7 @@ const Carousel = () => {
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>
-
+          <img className='bd-placeholder-img' width='100%' height='100%' src='https://picsum.photos/id/1/5616/3744' />
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -34,8 +30,8 @@ const Carousel = () => {
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>
-
+          {/*           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>*/}
+          <img className='bd-placeholder-img' width='100%' height='100%' src='https://picsum.photos/id/0/5616/3744' />
           <div class="container">
             <div class="carousel-caption text-end">
               <h1>One more for good measure.</h1>
