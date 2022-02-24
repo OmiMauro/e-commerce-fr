@@ -78,4 +78,4 @@ const Products = () => {
   )
 }
 
-export { Products };
+export { Products }

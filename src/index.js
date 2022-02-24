@@ -5,9 +5,11 @@ import App from './App'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'font-awesome/css/font-awesome.min.css'
 import 'bootstrap/dist/js/bootstrap'
+
+import { BrowserRouter } from 'react-router-dom'
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter >
     <App />
-  </React.StrictMode>,
+  </BrowserRouter >,
   document.getElementById('root')
 )
