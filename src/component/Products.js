@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
 
@@ -52,7 +53,7 @@ const Products = () => {
                       $ {product.price}
                     </p>
                   </div>
-                  <a href="#" className='btn btn-outline-dark'>Comprar ahora</a>
+                  <Link to={`/products/${product.id}`} >Comprar Ahora</Link>
                 </div>
               </div>
             )
