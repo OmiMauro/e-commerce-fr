@@ -22,7 +22,7 @@ const Products = () => {
   const Loading = () => {
     return (
       <div className="col-md-3">
-        <Skeleton height={350} />
+        <Skeleton height={350} count={5} />
       </div>
     )
   }
@@ -53,7 +53,7 @@ const Products = () => {
                       $ {product.price}
                     </p>
                   </div>
-                  <Link to={`/products/${product.id}`} >Comprar Ahora</Link>
+                  <Link to={`/products/${product.id}`} className='btn btn-outline-dark'>Comprar Ahora</Link>
                 </div>
               </div>
             )
