@@ -1,7 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from "react-redux";
-import { removeCart, addToCart } from "../redux/action/index";
+import { removeCart, addToCart } from "../redux/action/index"
+import { Link } from 'react-router-dom';
 const Cart = () => {
   const state = useSelector(state => state.handleCart)
 
@@ -48,9 +49,22 @@ const Cart = () => {
       </div>
     )
   }
+  const btnCheckout = () => {
+    return (
+      <div className="containter">
+        <div className="row">
+          <Link to='/checkout' className='btn btn-outline-primary mb-5 w-25 mx-auto'>
+            Finalizar la compra
+          </Link>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <>
       {state.length ? state.map(cartItems) : emptyCart()}
+      {state.length && btnCheckout()}
     </>
   );
 };
