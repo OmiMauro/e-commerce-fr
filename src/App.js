@@ -7,6 +7,7 @@ import { Products } from './component/Products'
 import { Contacts } from './component/Contacts'
 import { AboutUs } from './component/About-Us'
 import { Product } from './component/Product'
+import { Cart } from './component/Cart'
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path='/products/:id' exact element={<Product />} />
         <Route path='/contacts' exact element={<Contacts />} />
         <Route path='/about' exact element={<AboutUs />} />
+        <Route path='/cart' exact element={<Cart />} />
+
       </Routes>
       <Footer />
 
