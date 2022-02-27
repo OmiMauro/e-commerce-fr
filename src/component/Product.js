@@ -14,6 +14,7 @@ const Product = () => {
   const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
   const addProduct = (product) => {
+    console.log(product);
     dispatch(addToCart(product))
   }
 
