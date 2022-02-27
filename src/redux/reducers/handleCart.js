@@ -27,3 +27,4 @@ const handleCart = (state = cart, action) => {
       break
   }
 }
+export { handleCart }
