@@ -30,11 +30,11 @@ const Product = () => {
 
   const LoadingComp = () => {
     return (
-      <div>
+      <div className='row'>
         <div className="col-md-6">
           <Skeleton height={350} />
         </div>
-        <div className="col-md-6" >
+        <div className="col-md-6"  >
           <Skeleton height={350} width={300} />
           <Skeleton height={75} />
           <Skeleton height={25} width={150} />
@@ -80,7 +80,7 @@ const Product = () => {
     <div>
 
       <div className="container py-5">
-        <div className="row py-5">
+        <div className="row">
           {
             loading ? <LoadingComp /> : <ShowProduct />
           }
