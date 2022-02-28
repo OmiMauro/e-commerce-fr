@@ -8,6 +8,7 @@ import { Contacts } from './component/Contacts'
 import { AboutUs } from './component/About-Us'
 import { Product } from './component/Product'
 import { Cart } from './component/Cart'
+import { Checkout } from './component/Checkout'
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path='/contacts' exact element={<Contacts />} />
         <Route path='/about' exact element={<AboutUs />} />
         <Route path='/cart' exact element={<Cart />} />
-
+        <Route path='/checkout' exact element={<Checkout />} />
       </Routes>
       <Footer />
 
