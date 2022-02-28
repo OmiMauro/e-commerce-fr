@@ -1,58 +1,25 @@
-import React from 'react';
-
+import React from 'react'
+import { Link } from 'react-router-dom'
 const AboutUs = () => {
   return (
-    <div class="container px-4 py-5" id="featured-3">
-      <h2 class="pb-2 border-bottom">Sobre nosotros</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-          <div class="feature-icon bg-gradient">
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-            {/* <svg class="bi" width="1em" height="1em"><use xlink:href="#collection" /></svg> */}
-          </div>
-          <h2>Lorena Omiñuka</h2>
-          <p>Estudié en la UBA bla bla bla.....
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur at voluptate facilis ducimus veniam molestias sapiente natus adipisci, vel reiciendis! Minus atque quae doloribus laborum aut accusantium maxime dolore fuga!
+    <div class="container  py-5 my-5">
+      <div className="row ">
+        <div className="col-md-6">
+          <h1 className=' fw-bold text-dark mb-4'>About Us</h1>
+          <p className="lead ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nisi, illum vitae dolorum blanditiis quia nulla dignissimos adipisci ab officia, molestiae tempore, earum aliquam totam voluptates beatae asperiores in minima! Dolor ipsam dolorum minima assumenda, explicabo eum harum officia laudantium voluptates deserunt amet! Blanditiis distinctio quam nobis quae. Iure perspiciatis quibusdam est quam! Quo quae ea rem ratione a vitae earum animi ipsa nobis doloremque dolor, perferendis inventore magni, vero dolorum? Blanditiis dolores atque quidem commodi necessitatibus saepe illo? Qui debitis unde corrupti corporis alias doloremque vero, nisi incidunt consectetur, ex rerum impedit soluta doloribus accusamus eaque dolorum quibusdam modi.
           </p>
-          {/* <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right" /></svg>
-          </a> */}
+          <Link to='/contacts' className='btn btn-outline-dark w-50 mb-4'>¿Quieres comunicarte con nosotros?</Link>
         </div>
-        <div class="feature col">
-          <div class="feature-icon bg-gradient">
-            <i class="fa fa-tint" aria-hidden="true"></i>
-
-            {/*  <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle" /></svg> */}
-          </div>
-          <h2>Diseñadora de Ropa </h2>
-          <p>bla bla bla bla....
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit est voluptatum voluptatibus repellendus eum laboriosam impedit modi, nostrum sequi nam soluta doloremque facere officia, id, natus nobis? Porro, cupiditate!
-          </p>
-          {/*    <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right" /></svg>
-          </a> */}
-        </div>
-        <div class="feature col">
-          <div class="feature-icon bg-gradient">
-            <i class="fa fa-tags" aria-hidden="true"></i>
-
-            {/*    <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2" /></svg> */}
-          </div>
-          <h2>Confeccion de prendas </h2>
-          <p>bla bla bla bla ....
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum culpa perspiciatis optio hic ea ad, impedit repellendus, corrupti sed sequi quos blanditiis id eaque aperiam perferendis libero officiis non adipisci.
-          </p>
-          {/*  <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right" /></svg>
-          </a> */}
+        <div className="col-md-6 d-flex justify-content-center">
+          <img src="assets/bg.jpg" alt="Some" height={400} width='90%' />
         </div>
       </div>
     </div>
 
-  );
-};
+
+
+  )
+}
 
 export { AboutUs }
