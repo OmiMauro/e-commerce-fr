@@ -14,7 +14,6 @@ const Product = () => {
   const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
   const addProduct = (product) => {
-    console.log(product);
     dispatch(addToCart(product))
   }
 
@@ -50,7 +49,7 @@ const Product = () => {
   const ShowProduct = () => {
     return (
       <>
-        <div className="col-md-6 ">
+        <div className="col-md-6">
           <img src={product.image} alt={product.title} height='400px' width='400px' />
         </div>
         <div className="col-md-6">

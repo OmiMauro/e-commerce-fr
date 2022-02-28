@@ -44,8 +44,8 @@ const Products = () => {
         {
           filter.map(product => {
             return (
-              <div className="col-md-3 ">
-                <div class="card h-100 text-center py-4">
+              <div className="col-md-3 mb-2 ">
+                <div class="card h-100 text-center">
                   <img src={product.image} class="card-img-top" alt={product.title} height='250px' />
                   <div class="card-body">
                     <h5 class="card-title mb-0">{product.title.substring(0, 12)} ...</h5>
